@@ -1,0 +1,111 @@
+<ion-view>
+	<ion-content class="por1">
+		<br>
+		<div class="row">
+			<div class="col">
+				<img src="img/bienvenidos.png" class="img2">
+				<h1 class="r1">¡Registrate!</h1>
+				<h4 class="r3">En rockstar</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+					<h4 class="r2">Nombre</h4>
+				<div>
+					<input type="text" name="usuario" placeholder=" Ingrese Nombre" class="inp1" ng-model="user.name">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="r2">Apellido</h4>
+				<div>
+					<input type="text" name="usuario" placeholder="Ingrese Apellido"
+					class="inp1" ng-model="user.lastname">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="r2">Correo Electronico</h4>
+				<div>
+					<input type="text" name="usuario" placeholder="E-mail" class="inp1" ng-model="user.email">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="r2">Contraseña</h4>
+				<div>
+					<input type="password" name="usuario" placeholder="Ingrese su Contraseña" class="inp1" ng-model="user.password">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="r2">Edad</h4>
+				<div>
+					<fieldset class="fiel">
+						<select id="Edad" name="user_Edad">
+							<optgroup label="Edades">
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+							<option value="36">36</option>
+							<option value="37">37</option>
+							<option value="38">38</option>
+							<option value="39">39</option>
+							<option value="40">40</option>
+							<option value="Más">Más</option>
+							</optgroup>
+						</select>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="r2">Sexo</h4>
+				<div>
+					<fieldset class="fiel">
+						<select id="Edad" name="user_Edad">
+							<optgroup label="Genero">
+							<option value="Hombre">Hombre</option>
+							<option value="Mujer">Mujer</option>
+							<option value="Otros">Otros</option>
+							</optgroup>
+						</select>
+					</fieldset>
+				</div>			
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button class="But" ng-click="validar(user)">REGISTRARSE</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>	

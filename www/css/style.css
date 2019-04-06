@@ -1,0 +1,130 @@
+/* Empty. Add your own CSS if you like */
+
+/*Estilos del login*/
+.por1{
+	background: url(https://i.pinimg.com/564x/94/8b/99/948b997aba9ea99631e9de9cf2fec6c7.jpg)no-repeat fixed !important;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+}
+.text1{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font: oblique bold 120% cursive; 
+	font-size:250%;
+}
+.inp{ 
+	width: 200px;
+	padding: 5px;
+}
+.div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.textP{
+	text-align: center;
+	color: #fff;
+}
+.image{
+	text-align: center;
+}
+.imgI{
+	border-radius: 10px;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000;
+  padding-left: 10px !important;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  padding-left: 10px !important;
+}
+input::-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+  padding-left: 10px !important;
+}
+input::-moz-placeholder { /* Firefox 18- */
+  color: #000;
+  padding-left: 10px !important;
+}
+.But{
+	width: 100%;
+	padding: 3%;
+}
+.cent{
+	text-align: center;
+	color: #ff0000;
+}
+/*Estilos del Ingreso de datos*/
+.r1{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font: oblique bold 120% cursive; 
+	font-size:250%;
+}
+.r2{
+	color: #ff0000;
+	font-size: 110%;
+}
+.r3{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font:  oblique bold 120% cursive;
+	font-size: 150%;
+}
+.inp1{ 
+	width: 100%;
+	padding: 5px;
+}
+.fiel{
+	text-align: center;
+	width: 15px;
+	padding: 5px;
+}
+.ing1{
+	background: url(https://i.pinimg.com/originals/f3/ad/cb/f3adcb0caa0ab584c19682842b3e384d.jpg)no-repeat fixed !important;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	padding-left: 10%;
+    padding-right: 10%;
+}
+.img2{
+	border-radius: 10px;
+	text-align: center;
+	width: 100%;
+}
+/*Estilo de la pagina de recuperacion de contraseña*/
+.r1{
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font: oblique bold 120% cursive; 
+	font-size:250%;
+}
+.img3{
+	text-align: center;
+	width: 100%;
+}
+/*Estilos de la pagina principal*/
+.por2{
+	background: url(https://i.pinimg.com/564x/b6/e6/73/b6e673af7fc7ac779bd61aa574e4454e.jpg)no-repeat fixed !important;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+}
+.text2{
+	background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 13px 5px rgba(0, 0, 0, 0.5);
+    color: #0a9dc7;
+}
+/*Css de la pagina principal*/
+.stilo{
+		position:fixed; 
+		top: 0;
+}

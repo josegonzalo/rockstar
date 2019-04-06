@@ -1,0 +1,28 @@
+<ion-view>
+	<ion-content class="por1"><br>
+		<br>
+		<br>
+		<div class="image">
+		<img src="../img/ico.jpg" class="imgI">
+		</div>
+		<h1 class="text1">RockStar</h1>
+		<div class="div">
+			<form method="POST">
+						<h4 class="textP">Nombre de usuario</h4>
+					<input type="text" name="usuarios" placeholder="Ingrese usuario" class="inp" ng-model="user.nameuser"><br>
+						<h4 class="textP">Contraseña</h4>
+					<input type="password" name="Contraseña" placeholder="Ingrese Contraseña" class="inp" ng-model="user.password">
+						<br>
+				<button class="But" ng-click="mericon(user)">Entra</button>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col cent">
+					<br>
+				<span ui-sref="registro">Registrarse</span>
+					<br>
+				<span ui-sref="recuperar">¿Olvidaste tu contaseña?</span>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>	
