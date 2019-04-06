@@ -42,6 +42,7 @@ angular.module('starter.controllers', [])
 	}
 })
 
+/*controlador del logi*/
 .controller("login", function($scope,$state){
 
 	$scope.user = {}
@@ -67,8 +68,42 @@ angular.module('starter.controllers', [])
   			// ...
   		});
 	}
+	/*recuperacion de la contraseña*/
+	$scope.recovery = function(){
+		iziToast.question({
+		    timeout: 20000,
+		    close: false,
+		    overlay: false,
+		    displayMode: 'once',
+		    id: 'question',
+		    zindex: 999,
+		    message: 'Ingresa tu correo',
+		    position: 'center',
+		    inputs: [
+				['<input type="email">', function (instance, toast) {
+		 
+		            instance.hide({ transitionOut: 'fadeOut' }, toast, 'input');
+		 
+		        }, true]
+		    ],
+		    buttons: [
+		        
+		        ['<button>Eviar</button>', function (instance, toast) {
+		 
+		            instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
+		 
+		        }],
+		    ],
+		    onClosing: function(instance, toast, closedBy){
+		        console.info('Closing | closedBy: ' + closedBy);
+		    },
+		    onClosed: function(instance, toast, closedBy){
+		        console.info('Closed | closedBy: ' + closedBy);
+		    }
+		});
+	}
 })
-
+/*controlador de la pagina principal*/
 .controller("principal", function($scope){
 	
 	$scope.user = {}

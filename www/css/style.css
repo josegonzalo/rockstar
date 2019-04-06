@@ -53,10 +53,14 @@ input::-moz-placeholder { /* Firefox 18- */
 .But{
 	width: 100%;
 	padding: 3%;
+	background-color: #0b9c9a !important;
+	border: 0;
+	font: oblique bold 120%;
+	color: #fff; 
 }
 .cent{
 	text-align: center;
-	color: #ff0000;
+	color: #f6f5f5;
 }
 /*Estilos del Ingreso de datos*/
 .r1{
@@ -127,4 +131,26 @@ input::-moz-placeholder { /* Firefox 18- */
 .stilo{
 		position:fixed; 
 		top: 0;
+}
+/*css del boton de la perdia de contraseña*/
+.iziToast-buttons{
+	margin: 0 auto !important;
+    text-align: center;
+    width: 100% !important;
+}
+.iziToast-inputs{
+	margin-right: 8px;
+    width: 100%;
+    text-align: center;
+}
+.iziToast-inputs-child{
+	width: 250px;
+}
+.iziToast-texts{
+	width: 100% !important;
+}
+.iziToast-message{
+	text-align: center !important;
+	float: none !important;
+	font-weight: bold;
 }
