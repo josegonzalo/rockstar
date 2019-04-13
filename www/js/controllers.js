@@ -70,6 +70,9 @@ angular.module('starter.controllers', [])
 	}
 	/*recuperacion de la contraseña*/
 	$scope.recovery = function(){
+
+		$scope.cre = "";
+
 		iziToast.question({
 		    timeout: 20000,
 		    close: false,
@@ -80,27 +83,45 @@ angular.module('starter.controllers', [])
 		    message: 'Ingresa tu correo',
 		    position: 'center',
 		    inputs: [
-				['<input type="email">', function (instance, toast) {
+				['<input type="email">', function (instance, toast, input, e) {
 		 
 		            instance.hide({ transitionOut: 'fadeOut' }, toast, 'input');
+		            console.log($scope.cre)
 		 
 		        }, true]
 		    ],
 		    buttons: [
 		        
-		        ['<button>Eviar</button>', function (instance, toast) {
+		        ['<button>Eviar</button>', function (instance, toast, button, e, inputs) {
 		 
 		            instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
-		 
 		        }],
 		    ],
 		    onClosing: function(instance, toast, closedBy){
 		        console.info('Closing | closedBy: ' + closedBy);
+				iziToast.success({
+				title: 'Enviado',
+				message: 'Verifica en tu correo electronico',
+			});
+
+				console.log(button)
+				console.log(e)
+				console.log(inputs)
+				console.log()
+				console.log()
+
+			/*if(){
+
+				}else{
+
+				}
+*/
 		    },
 		    onClosed: function(instance, toast, closedBy){
 		        console.info('Closed | closedBy: ' + closedBy);
 		    }
 		});
+		
 	}
 })
 /*controlador de la pagina principal*/
